@@ -1,0 +1,12 @@
+Datos de la alumna:
+Nombre:Pucciano Bianca
+Carrera:Diseño Multimedial 
+Comisión: "A"
+Turno: Tarde
+Año: 2021
+Materia: Maquetado y Desarrollo Web
+Profesor: Jorge Alberto Samuelle
+
+__________
+LINK DE HOST WEB DE LA PÁGINA:
+www.unturno.com.ar

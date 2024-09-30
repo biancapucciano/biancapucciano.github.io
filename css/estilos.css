@@ -1,0 +1,392 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.foto
+{
+    width: 15%;
+    margin-right: 0.3125rem;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    width: 15.625rem;
+    position: absolute;
+    top: 10vh;
+    right: 0.4375rem;
+    overflow: hidden;
+    z-index: 10;
+}
+
+#menu-hamburguesa {
+    text-align: center;
+    margin-right: 0.625rem;
+    cursor: pointer;
+}
+
+#btn-menu {
+    display: none;
+}
+
+#btn-menu:checked ~ .menu {
+    display: block;
+}
+
+.menu ul {
+    margin: 0rem;
+    padding: 0rem;
+    margin-right: -4px;
+}
+
+.opcion {
+    display: block;
+    list-style-type: none;
+    padding: 0.625rem;
+    margin-right: -4px;
+    text-align: left;
+    background-color: rgb(182, 161, 158);
+}
+
+.opcion:hover {
+    background-color: rgb(182, 161, 158);
+    cursor: pointer;
+}
+
+.opcion a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(71, 36, 31);
+}
+
+.opcion a:hover {
+    opacity: 0.5; 
+}
+
+header {
+    background-color: rgb(182, 161, 158);
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 0.125rem solid rgb(71, 36, 31);
+    margin-bottom: 0.3125rem;
+}
+
+header .logo {
+    width: 5.625rem;
+    margin-left: 5rem;
+}
+
+/*inicio slider*/
+.slider {
+    display: flex;
+    justify-content: center;
+}
+/*fin slider*/
+
+/*inicio galería de imágenes*/
+.galeria
+{
+    margin-top: 1.25rem;
+    display: flex;
+    justify-content: center;
+}
+/*fin galería de imágenes*/
+
+/*Inicio de Títulos y Texto*/
+h1 {
+    text-align:center;
+    color: rgb(82, 80, 80);
+}
+
+p {
+    color: rgb(82, 80, 80);
+}
+
+.titulos-sahumerios {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.nombre-secciones {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+.texto-nosotros {
+    width: 70%;
+    margin: auto;
+}
+
+.texto-nosotros p {
+    font-size: 1.125rem;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.linea {
+    width: 5%;
+    margin: auto;
+    border: 0.125rem solid rgb(129, 23, 76);
+}
+/*Fin de Títulos y Texto*/
+
+/*Inicio Iframe*/
+    .video {
+        margin-top: 1.875rem;
+        text-align: center;
+        margin: 1.875rem auto;
+    }
+
+    .video iframe {
+        border-radius: 0.625rem;
+        width: 25rem;
+        height: 19.6875rem;
+    }
+/*Fin de Inicio Iframe*/
+
+/*inicio sección productos*/
+#productos {
+    width: 80%;
+    margin: auto;
+}
+
+.producto {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1.875rem;
+}
+
+.desc-producto {
+    width: 100%;
+    margin: auto;
+    margin-top: 1.875rem;
+}
+
+.producto .desc-producto img {
+    width: auto;
+    height: 10vh;
+    display: block;
+    margin: auto;
+}
+
+.producto>img {
+    display: block;
+    margin: auto;
+    margin-top: 1.25rem;
+    width: auto;
+    height: 40vh;
+}
+
+.producto p {
+    text-align: justify;
+    width: 100%;
+    margin: auto;
+    margin-top: 1.25rem;
+    line-height: 1.5;
+}
+
+/*fin sección productos*/
+
+/*Inicio Footer*/
+.footer {
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(182, 161, 158);
+    border-top: 0.125rem solid rgb(71, 36, 31);
+    margin-top: 1.625rem;
+}
+
+.footer p {
+    text-align: center;
+    vertical-align: center;
+    color: rgb(71, 36, 31);
+    font-weight: bold;
+}
+
+.redes-sociales {
+    text-align: center;
+    padding-top: 0.3125rem;
+}
+/*Fin Footer*/
+
+/*Inicio Botón Subir*/
+.boton-subir {
+    width: 4.375rem;
+    height: 4.375rem;
+    border-radius: 2.5rem;
+    background-color: rgb(129, 23, 76);
+    position: fixed;
+    text-align: center;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    margin-bottom: 0.625rem;
+}
+
+.boton-subir a {
+    display: block;
+}
+/*Fin Botón Subir*/
+
+/*Inicio Formulario de Contacto*/
+.formulario {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+form .elemento-form {
+    display: block;
+    width: 100%;
+    margin-top: 0.625rem;
+}
+
+form input, textarea {
+    border: none;
+    background-color: transparent;
+    margin-top: 0.625rem;
+    border-bottom: 0.125rem solid rgb(129, 23, 76);
+}
+
+form input, textarea:focus {
+    outline: none;
+}
+
+.boton {
+    margin-top: 0.625rem;
+    padding: 0.625rem;
+    background-color: rgb(129, 23, 76);
+    border-radius: 0.625rem;
+    float: right;
+    color: white;
+}
+
+.boton:hover {
+    background-color: rgb(182, 161, 158);
+    cursor: pointer;
+    border-radius: 0.625rem;
+    color: rgb(129, 23, 76);
+}
+/*Fin Formulario de Contacto*/
+
+/*Inicio Pantalla Muchas Gracias en PHP*/
+.h1php {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(129, 23, 76);
+}
+
+.h2php {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(129, 23, 76);
+}
+
+.tuconsulta {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(129, 23, 76);
+}
+/*Fin Pantalla Muchas Gracias en PHP*/
+
+@media screen and (min-width: 850px) {
+    .menu {
+        width: 40%;
+        min-width: 37.5rem;
+        display: block;
+        position: static;
+    }
+
+    .opcion {
+        display: inline-block;
+        width: calc(100%/5);
+        padding: 0.625rem;
+        margin-right: -4px;
+        text-align: center;
+    }
+
+    #menu-hamburguesa {
+        display: none;
+    }
+
+    .producto>img {
+        display: inline-block;
+        margin-right: -4px;
+        height: 60vh;
+        max-width: 30%;
+    }
+    
+    .desc-producto {
+        display: inline-block;
+        width: 70%;
+        margin-right: -4px;
+        vertical-align: top;
+        padding-left: 3.125rem;
+    }
+
+    .producto .desc-producto img {
+        display: inline;
+        text-align: left;
+        width: auto;
+        height: 15vh;
+    }
+
+    .producto p {
+        text-align: left;
+        margin-top: 3.125rem;
+    }
+
+    .linea {
+        width: 4%;
+        margin:auto;
+        border: 0.1875rem solid rgb(129, 23, 76);
+    }
+
+    .video {
+        width: 80%;
+    }
+
+    .video iframe {
+        width: 70%;
+        height: 40vh;
+    }
+
+    .formulario {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .producto {
+        width: 50%;
+        margin-right: -4px;
+        display: inline-block;
+    }
+
+    .linea {
+        width: 3%;
+        margin:auto;
+        border: 0.125rem solid rgb(129, 23, 76);
+    }
+
+    .video {
+        width: 50%;
+    }
+
+    .video iframe {
+        width: 100%;
+        height: 40vh;
+    }
+}
